@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\bus;
 use Illuminate\Http\Request;
 
 class bussearch extends Controller
@@ -11,6 +11,16 @@ class bussearch extends Controller
        $name= $request->name;
        $email=$request->email;
        $station=$request->stat;
-       
+       $buses=new bus();
+       $buses->name=$name;
+       $buses->email=$email;
+       $buses->station=$station;
+       $value=$buses->save();
+        if($value){
+            return response()->json(["success"=>true]);
+        }
+        else{
+            return response()->json(["success"=>false]);
+        }
     }
 }

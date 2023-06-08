@@ -43,7 +43,18 @@ export default{
     methods:{
         passData:async function()
         {
-            var result=await axios.post()
+            var result=await axios.post("http://127.0.0.1:8000/api/input",{
+                email:this.email1,
+                name:this.name1,
+                station:this.stat
+            }).then(response=>{
+                if(response.data.success)
+                {
+                    document.write("done!!!!")
+                }
+            }).catch(error=>{
+                
+            })
         }
     }
 
