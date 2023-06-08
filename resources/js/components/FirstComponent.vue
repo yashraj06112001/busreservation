@@ -47,13 +47,6 @@ export default{
                 email:this.email1,
                 name:this.name1,
                 station:this.stat
-            }).then(response=>{
-                if(response.data.success)
-                {
-                    document.write("done!!!!")
-                }
-            }).catch(error=>{
-                
             })
         }
     }
