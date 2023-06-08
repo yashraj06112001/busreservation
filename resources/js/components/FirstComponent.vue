@@ -22,7 +22,7 @@
                 <option>Gorakhpur</option>
                 <option>Ranchi</option>
             </datalist> 
-           <button id="submit_button" v-on:click="passData">submit</button>
+           <button id="submit_button" v-on:click.prevent="passData">submit</button>
         </form>
         <br>
 

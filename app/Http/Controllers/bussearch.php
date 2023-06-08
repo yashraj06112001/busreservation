@@ -10,7 +10,7 @@ class bussearch extends Controller
     {
        $name= $request->name;
        $email=$request->email;
-       $station=$request->stat;
+       $station=$request->station;
        $buses=new bus();
        $buses->name=$name;
        $buses->email=$email;
