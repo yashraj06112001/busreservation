@@ -27443,7 +27443,15 @@ var render = function () {
       _vm._v(" "),
       _c(
         "button",
-        { attrs: { id: "submit_button" }, on: { click: _vm.passData } },
+        {
+          attrs: { id: "submit_button" },
+          on: {
+            click: function ($event) {
+              $event.preventDefault()
+              return _vm.passData.apply(null, arguments)
+            },
+          },
+        },
         [_vm._v("submit")]
       ),
     ]),
