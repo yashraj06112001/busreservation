@@ -53,3 +53,26 @@ export default{
 
 }
 </script>
+<style scoped>
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+label {
+  font-weight: bold;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+}
+</style>
