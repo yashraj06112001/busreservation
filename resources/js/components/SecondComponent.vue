@@ -7,7 +7,8 @@ export default  {
     {
         return {
             available:"",
-            available_time:""
+            available_time:"",
+            waiting:""
         }
     }
         
