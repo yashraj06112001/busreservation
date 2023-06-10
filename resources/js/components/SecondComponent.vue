@@ -6,7 +6,8 @@ export default  {
     data:function()
     {
         return {
-            available:""
+            available:"",
+            available_time:""
         }
     }
         
