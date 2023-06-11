@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <first-component></first-component>
     </div>
 </template>
 <script>
